@@ -15,23 +15,96 @@ h2 {
     text-decoration: underline;
 }
 
+
+/*Main grid cotnainer, logo, and OJT record for box*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.logo {
+    display: block;
+    width: 250px;
+    height: auto;
+    margin: -98px  0 10px 0px;
+    padding-left: 50px;
+}
+
 .input-groups {
     display: flex;
     flex-direction: column;
+}
+
+.input-groups.standalone {
+    width: 100%;
+    align-items: center;
+}
+
+.input-groups.standalone input {
     width: 270px;
 }
 
 .flex-input-fields {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
     justify-content: center;
-    padding: 20px 0px 60px 0px;
-    margin: 0px 60px 40px 60px;
+    padding: 0px 0px 30px 0px;
+    margin: 0px 0px 20px 18px;
     background-color: var(--gray);
     border-radius: 10px;
     box-shadow: 10px 5px 10px 1px rgba(0,0,0,0.3);
+    width: 80%;
+    
 }
+
+/*Childcare logo and campus info*/
+
+.childcare-logo {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    right: 70px
+}
+
+.contact-row {
+    display: flex;
+    gap: 12%;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20%
+}
+
+.contact-h3 {
+    font-size: 22px;
+    line-height: .85;
+    font-weight: 450;
+}
+
+.h4-group {
+    text-align: center;
+    position: relative;
+    right: 8.5%;
+    line-height: .1;
+}
+
+
+
+/*Work process schedule*/
+
+.timecard-hours li .show-ol{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 140px;
+    line-height: 1.7;
+}
+
+.show-ol {
+    padding-left: 2px;
+}
+
+
+/*Input boxes for timecard*/
 
 .input-boxes {
     height: 40px;
@@ -47,11 +120,7 @@ h2 {
 input[placeholder="hours worked"] {
     border-radius: 5px;
     height: 20px
-}
-
-.flex-h3 {
-    text-align: center;
-}
+} 
 
 /*Print*/
 
@@ -90,6 +159,45 @@ input[placeholder="hours worked"] {
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 1580px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+.logo {
+    margin: 20px auto;
+    padding-left: 0;
+}
+
+.flex-input-fields {
+    margin: 0 auto;
+}
+
+.childcare-logo {
+    right: 0;
+    margin-top: 20px;
+}
+
+.contact-row {
+    padding: 0;
+    justify-content: center;
+}
+
+.h4-group {
+    right: 0;
+}
+
+.timecard-hours li .show-ol {
+        padding-right: 30px; 
+        align-items: center;
+    }
+
+   
+
 }
 
 /*Print Section*/
