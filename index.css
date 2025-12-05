@@ -40,10 +40,6 @@ h2 {
     align-items: center;
 }
 
-.input-groups.standalone input {
-    width: 270px;
-}
-
 .flex-input-fields {
     display: flex;
     flex-wrap: wrap;
